@@ -54,6 +54,9 @@ module.exports = {
             "@com": path.resolve(__dirname, "src/components"),
             "@pages": path.resolve(__dirname, "src/pages"),
             "@sass": path.resolve(__dirname, "src/sass"),
+            "@actions": path.resolve(__dirname, "src/actions"),
+            "@acTypes": path.resolve(__dirname, "src/actionTypes"),
+            "@reducers": path.resolve(__dirname, "src/reducers"),
         },
         extensions: [".js", ".jsx"]
     }

@@ -19,7 +19,10 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/preset-env']
+                        presets: ['@babel/preset-env', "@babel/preset-react"],
+                        plugins: [
+                            "@babel/plugin-proposal-class-properties"
+                        ],
                     }
                 }
             },
@@ -51,12 +54,6 @@ module.exports = {
     },
     resolve: {
         alias: {
-            "@com": path.resolve(__dirname, "src/components"),
-            "@pages": path.resolve(__dirname, "src/pages"),
-            "@sass": path.resolve(__dirname, "src/sass"),
-            "@actions": path.resolve(__dirname, "src/actions"),
-            "@acTypes": path.resolve(__dirname, "src/actionTypes"),
-            "@reducers": path.resolve(__dirname, "src/reducers"),
         },
         extensions: [".js", ".jsx"]
     }
